@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+    mysql:
+        container_name: compras
+        hostname: compras
+        image: mysql
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: dba
+            MYSQL_DATABASE: dba
+            MYSQL_USER: dba
+            MYSQL_PASSWORD: dba
+        volumes:
+            - .data:/data/src/volumes
+        ports:
+            - 3306:3306
