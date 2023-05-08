@@ -1,20 +1,23 @@
 <template>
 	<footer class="footer">
-		<span>Criado por <strong>Bruno de Carvalho</strong></span>
+		<span
+			>Criado com <i class="fa fa-heart" /> por
+			<strong> Bruno de Carvalho</strong></span
+		>
 	</footer>
 </template>
 
 <script>
 export default {
-	nome: "Footer",
+	name: "Footer",
 };
 </script>
 
 <style>
 .footer {
 	grid-area: footer;
-	background-color: #ddd;
-	color: #333;
+	background-color: #325961;
+	color: #e27c7c;
 
 	display: flex;
 	align-items: center;

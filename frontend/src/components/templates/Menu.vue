@@ -1,10 +1,15 @@
 <template>
-	<aside class="menu"></aside>
+	<aside class="menu" v-show="is_menu_visible">
+		<h1>MENU</h1>
+	</aside>
 </template>
 
 <script>
+import { mapState } from "vuex";
+
 export default {
-	nome: "Menu",
+	name: "Menu",
+	computed: mapState(["is_menu_visible"]),
 };
 </script>
 
@@ -15,5 +20,9 @@ export default {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+}
+h1 {
+	color: #fff;
+	text-align: center;
 }
 </style>
