@@ -1,7 +1,7 @@
 <template>
 	<footer class="footer">
 		<span
-			>Criado com <i class="fa fa-heart" /> por
+			>Criado com <i class="pi pi-heart-fill" /> por
 			<strong> Bruno de Carvalho</strong></span
 		>
 	</footer>

@@ -7,6 +7,9 @@ app.db = database;
 
 consign()
 	.then("./src/middlewares/")
+	.then("./src/databases/tables/")
+	.then("./src/validations/validate_global.js")
+	.then("./src/validations/")
 	.then("./src/models/")
 	.then("./src/services/")
 	.then("./src/controllers/")

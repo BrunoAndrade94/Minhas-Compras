@@ -23,10 +23,16 @@ h1 i {
 .page_title h1 {
 	margin: 0;
 	color: rgb(204, 178, 178);
+	text-align: center;
+	align-items: center;
+	flex-direction: row;
 }
 .page_title h2 {
 	color: #777;
 	margin-top: 5px;
 	font-size: 1.3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 </style>

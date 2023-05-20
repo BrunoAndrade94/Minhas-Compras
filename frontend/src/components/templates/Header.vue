@@ -1,10 +1,7 @@
 <template>
 	<header class="header">
-		<a class="toggle" @click="toggle_menu" v-if="!hide_toggle">
-			<i class="pi pi-list"></i>
-		</a>
 		<h1 class="title">
-			<router-link to="/produtos">
+			<router-link to="/home">
 				{{ title }}
 			</router-link>
 		</h1>
@@ -12,21 +9,18 @@
 </template>
 
 <script>
-import SideBar from "../SideBar.vue";
+import SideBar from "../menus/SideBar.vue";
 
 export default {
 	name: "Header",
 	components: { SideBar },
-	data() {
-		return {
-			visible: false,
-		};
-	},
 	props: {
 		title: String,
 		hide_toggle: Boolean,
 	},
-	computed: {},
+	data() {
+		return {};
+	},
 	methods: {
 		toggle_menu() {
 			this.$store.commit("toggle_menu");
@@ -43,20 +37,24 @@ export default {
 	color: #fff;
 	display: flex;
 	align-items: center;
+	text-align: center;
 	justify-content: center;
 }
-
 .title {
+	margin-left: 20px;
 	font-size: 1.2rem;
 	color: #fff;
 	font-weight: 100;
 	flex-grow: 1;
-	text-align: center;
 }
 
 .title a {
 	color: #fff;
 	text-decoration: none;
+}
+
+.title a:hover {
+	color: burlywood;
 }
 
 header.header > a.toggle {
